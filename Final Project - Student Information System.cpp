@@ -1,8 +1,18 @@
-
+/*
+Developer: Alka Mutnjakovic
+Environment: C++
+Description: This program was written for a final project for my first year Object Oriented Programming class. 
+The purpose of this program is to make accessing student information easier. This program acts as a student 
+information system for Bachelor of Technology students which shows a record of the student (info, grades, courses.)
+This program includes a function that calculates current gpa, final gpa and the final grade needed for the student to 
+attain their inputted final grade goal. 
+*/
 
 #include <iomanip>
 #include <fstream>
 #include <string>
+
+// Header files 
 
 #include "HeaderFinalProjStudent.h"
 #include "HeaderFinalProjCourse.h"
@@ -19,6 +29,8 @@ int main()
     int option;
     int i;
     int result = 0;
+    
+    // student log in. Program will ask for student number and password, all info stored in file.
     
     cout << "1. Register\n";
     cout << "2. Login\n";
@@ -130,6 +142,8 @@ int main()
         double examWorth;
         double gradeNeeded;
         
+        // After logging in, "student portal" opens. User can input information.
+        
         cout << "Welcome to your personal Student Portal!" << endl;
         
         cout << "Please enter your name: ";
@@ -177,6 +191,8 @@ int main()
         
         Student personalInfo(name, studentNumber, birthday, address, postalCode, phoneNumber, year, term, program);
         displayInfo(personalInfo);
+        
+        // Student course information for specific chosen course.
         
         cout << "Please enter Course Name: ";
         cin >> courseName;
@@ -240,6 +256,8 @@ void displayGradeInfo(Course r)
     //_______________________
     
     cout << "If you score a " <<  r.getGradeNeeded() << "% on the final worth " << r.getExamWorth() << "%, you will obtain a final grade of " << r.getDesiredFinalGrade() << "%." << endl;
+    
+    // Student will have option to view desired final grade on 12 point scale or as a letter grade. Program will compute this.
     
     int input;
     
