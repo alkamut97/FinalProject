@@ -1,3 +1,5 @@
+//This header file is for main program Student Information System. 
+//This program includes information for required courses based on student info. Student can request help and obtain list of required courses saved in text file. 
 
 #ifndef HeaderRecCourse_h
 #define HeaderRecCourse_h
