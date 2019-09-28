@@ -1,4 +1,5 @@
-
+//This header file is for main program Student Information System. 
+//This program includes personal information for a student. (Name, student number, birthday, address, postal code, phone number, year, term, program).
 
 #ifndef HeaderFinalProjStudent_h
 #define HeaderFinalProjStudent_h
