@@ -1,5 +1,5 @@
 //This header file is for main program Student Information System. 
-//This program includes information for a specified course (course name, current average, desired final grade, and exam worth)/
+//This program includes information for a specified course (course name, current average, desired final grade, and exam worth)
 
 #ifndef HeaderFinalProjCourse_h
 #define HeaderFinalProjCourse_h
